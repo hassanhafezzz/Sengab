@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 /* sign in / sign up buttons */
-.sign-btns>button {
+.sign-btns>button{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   padding: 10px 30px;
@@ -157,13 +157,13 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all .4s;
   transition: all .4s;
 }
-#sign-up-btn {
+#sign-up-btn, #sign-up-btn:focus {
   color: #F4F4F4;
   background-color: #E74C3C;
   margin-right: 10px;
   border-color: transparent;
 }
-#sign-up-btn:hover {
+#sign-up-btn:hover, #sign-up-btn:active {
   color:#fff;
   background-color: #E82A14;
   border-color: transparent;
@@ -171,11 +171,12 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all .4s;
   transition: all .4s;
 }
-#sign-in-btn {
+#sign-in-btn, #sign-in-btn:focus {
   border-color: #99AABC;
   color: #4C637B;
+  background-color: transparent;
 }
-#sign-in-btn:hover {
+#sign-in-btn:hover, #sign-in-btn:active {
   border-color: #344C67;
   color: #344C67;
   background-color: transparent;
