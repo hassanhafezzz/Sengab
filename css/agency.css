@@ -360,6 +360,7 @@ header .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
 }
+
 }section {
     padding: 100px 0;
 }
@@ -375,9 +376,10 @@ section h3.section-subheading {
     margin-bottom: 75px;
     font-weight: 300;
 }
+
 @media (min-width:768px) {
     section {
-    padding: 150px 0;
+    padding: 100px 0;
 }
 }.service-heading {
     margin: 15px 0;
@@ -867,4 +869,15 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
   100% {
     transform: scale(1);
   }
+}
+/* features */
+#features{
+  padding: 100px 0 0 0 ;
+}
+.features-margin{
+  margin-top: 50px;
+}
+.feature-img{
+  height: 600px;
+  background-image: url('../img/1.png');
 }
