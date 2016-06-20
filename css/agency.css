@@ -7,15 +7,15 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto",sans-serif;
-    webkit-tap-highlight-color: #2CC36B;
+    webkit-tap-highlight-color: #70cbf6;
 }
 ::-moz-selection {
     text-shadow: none;
-    background: #2CC36B;
+    background: #70cbf6;
 }
 ::selection {
     text-shadow: none;
-    background: #2CC36B;
+    background: #70cbf6;
 }
 img::selection {
     background: 0 0;
@@ -25,7 +25,7 @@ img::-moz-selection {
 }
 /*---------------------------------------------------------------------------*/
 .text-muted {
-    color: #99AABC;
+    color: #777;
 }
 .text-primary {
     color: #344C67;
@@ -94,12 +94,18 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 3px;
     font-size: 18px;
     padding: 20px 40px;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
 }
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     color: #fff;
-    background-color: #4C637B;
-    border-color: #344C67;
-}
+    background-color: #70cbf6;
+    border-color: #70cbf6;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+  }
 .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl {
     background-image: none;
 }
@@ -362,12 +368,11 @@ section h2.section-heading {
     margin-bottom: 15px;
 }
 section h3.section-subheading {
-    font-size: 16px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
-    font-style: italic;
-    font-weight: 400;
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 75px;
+    font-weight: 300;
 }
 @media (min-width:768px) {
     section {
@@ -671,6 +676,54 @@ section#contact :-ms-input-placeholder {
 }
 section#contact .text-danger {
     color: #e74c3c;
+}
+.remind-image{
+  height: 830px;
+  text-align: center;
+  overflow: hidden;
+  /*background: #fff url('../img/1.png') no-repeat bottom;*/
+}
+#remind{
+  padding: 100px 0 0 0;
+}
+.or{
+  color: #344C67;
+  font-size: 20px;
+  font-family: Montserrat,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  margin: 0 15px;
+}
+.google-btn{
+  padding: 10px 20px 10px 20px ;
+  background-color: #d62d20;
+  color: white;
+  border: none;
+}
+.google-btn i {
+  margin-right: 10px;
+  padding: 10px;
+  border-right: 2px solid #c92a1e ;
+}
+.google-btn:hover{
+  background-color: #de2e21;
+  color: white;
+  border: none;
+}
+.facebook-btn{
+  padding: 10px 20px 10px 20px ;
+  background-color: #4464A2;
+  color: white;
+  border: none;
+}
+.facebook-btn i {
+  margin-right: 10px;
+  padding: 10px;
+  border-right: 2px solid #3f5c96 ;
+}
+.facebook-btn:hover{
+  background-color: #496aad;
+  color: white;
+  border: none;
 }
 footer {
     padding: 25px 0;
