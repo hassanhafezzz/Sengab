@@ -2,6 +2,7 @@
 ============================================================================= */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,900,700,500);
 /* ============================================================================= */
+
 /*-------------------------------- global styles -----------------------------*/
 body {
     overflow-x: hidden;
@@ -384,6 +385,20 @@ section h3.section-subheading {
     margin: 15px 0;
     text-transform: none;
 }
+
+@media (min-width:992px) {
+    .timeline>li {
+    min-height: 150px;
+}
+.timeline>li .timeline-panel {
+    padding: 0 20px 20px;
+}
+.timeline>li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+}
+
 .watch{
   margin: 20px 0;
 }
