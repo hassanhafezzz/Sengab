@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 .bg-light-gray {
-    background-color: #ECF2F6;
+    background-color: #f7f8fa;
 }
 .bg-darkest-gray {
     background-color: #222;
@@ -702,27 +702,39 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
   background-repeat: no-repeat;
 }
 .how-it-works-img-1{
-  background-image: url('../img/test1.png');
+  background-image: url('../img/test2.png');
 }
 /* features */
 #features{
   padding: 100px 0 0 0 ;
 }
+.feature-heading{
+  font-weight: 400;
+  font-size: 28px;
+  margin-top: 120px;
+  padding:10px;
+}
+.feature-text{
+  padding:10px;
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
 .features-margin{
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .feature-img{
-  height: 600px;
+  height: 500px;
   background-repeat: no-repeat;
 }
 .feature-img-1{
-  background-image: url('../img/11.png');
+  margin-left: 150px;
+  background-image: url('../img/1.png');
 }
 .feature-img-2{
-  margin-left: 100px;
-  background-image: url('../img/12.png');
+  margin-left: 80px;
+  background-image: url('../img/2.png');
 }
 .feature-img-3{
-  margin-left: 150px;
-  background-image: url('../img/mobile.png');
+  background-image: url('../img/12345.png');
 }
