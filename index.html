@@ -121,16 +121,30 @@
           <div class="row">
               <div class="col-lg-12 text-center">
                 <h2 class="section-heading">How It Works</h2>
-                  <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                  <h3 class="section-subheading" id="how-it-works-subheading">¯\_(ツ)_/¯</h3>
               </div>
           </div>
-          <div class="row text-center features-margin">
-              <div class="col-md-offset-1 col-md-4 col-sm-12">
-                  <h4 class="feature-heading">All you need is in one menu</h4>
-                  <p class="text-muted"> Always there to navigate , you can easily access the projects you created , your enrolled projects and see all the projects in specific category</p>
+          <div class="row text-left features-margin">
+              <div class="col-md-offset-1 col-md-3 col-sm-12">
+                <div id="add-proj" class="how-it-works">
+                  <h4 class="how-it-works-heading">Add your project</h4>
+                  <p class="how-it-works-paragraph">It's very easy and guidable to add your project</p>
+                </div>
+                <div class="how-it-works-text how-it-works" id="publish-proj">
+                  <h4 class="how-it-works-heading">Publish the project</h4>
+                  <p class="how-it-works-paragraph">Once you fill out all the fields and submit it, your project is published immediately</p>
+                </div>
+                <div class="how-it-works-text how-it-works" id="browse-projs">
+                  <h4 class="how-it-works-heading">It's now online</h4>
+                  <p class="how-it-works-paragraph">Now, everybody can see your project, enroll to it and help you through contribution</p>
+                </div>
+                <div class="how-it-works-text how-it-works" id="show-results">
+                  <h4 class="how-it-works-heading">View the results</h4>
+                  <p class="how-it-works-paragraph">You can view the project results in no time even if it's still in progess</p>
+                </div>
               </div>
-              <div class="col-md-7 col-sm-12">
-                  <div class="how-it-works-img how-it-works-img-1"></div>
+              <div class="col-md-offset-1 col-md-7 col-sm-12">
+                  <div id="how-it-works-img"></div>
               </div>
           </div>
     </section>
@@ -410,7 +424,36 @@
 
       $('.modal').on('shown.bs.modal', function () {
         player.api('play');
-      })
+      });
+      $('.how-it-works').click(function(){
+        $('.how-it-works').removeClass('c-selected');
+        $('.how-it-works h4').removeClass('selected');
+        $(this).addClass('c-selected');
+        $('h4',this).addClass('selected');
+
+      });
+
+      $('#add-proj').click(function(){
+        $("#how-it-works-img").hide().fadeIn(1500);
+        $('#how-it-works-img').css("background-image", "url(img/add-proj.png)");
+      });
+      $('#publish-proj').click(function(){
+        $("#how-it-works-img").hide().show(1000);
+        $('#how-it-works-img').css("background-image", "url(img/publish-proj.png)");
+      });
+      $('#browse-projs').click(function(){
+        $("#how-it-works-img").hide().show(1000);
+        $('#how-it-works-img').css("background-image", "url(img/browse-projs.png)");
+      });
+      $('#show-results').click(function(){
+        $("#how-it-works-img").hide().fadeIn(1500);
+        $('#how-it-works-img').css("background-image", "url(img/show-results.png)");
+      });
+      //to apply hover effect to #add-proj div on page load
+      $(document).ready(function(){
+        $('#add-proj h4').addClass('selected');
+        $('#add-proj.how-it-works').addClass('c-selected');
+  });
     </script>
 </body>
 </html>
