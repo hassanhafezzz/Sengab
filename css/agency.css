@@ -125,24 +125,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #344C67;
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
-
-/*.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
-    color: #4C637B;
-}
-
-.navbar-default .navbar-collapse {
-    border-color: rgba(255, 255, 255, .02);
-}
-.navbar-default .navbar-toggle {
-    background-color: #344C67;
-    border-color: #344C67;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #344C67;
-}*/
 .navbar-default .nav li a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -190,7 +172,6 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: all .4s;
   transition: all .4s;
 }
-
 /* Toggle Navigation */
 .navbar-toggle {
   margin-right: 30px;
@@ -218,21 +199,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
   background-color: transparent;
 }
-
-
-/*.navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
-    color: #344C67;
-    outline: 0;
-}
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
-    background-color: #344C67;
-}
-.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #4C637B;
-}*/
 @media(max-width:767px){
   .navbar-header {
     margin-bottom: 5px;
@@ -244,6 +210,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width:768px) {
+  section {
+  padding: 50px 0;
+}
+  header .intro-text {
+  padding-bottom: 200px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 50px;
+}
   .navbar-shrink .sign-btns>button {
     margin-top: 9px;
   }
@@ -277,10 +264,6 @@ h1, h2, h3, h4, h5, h6 {
     -moz-transition: all .3s;
     transition: all .3s;
   }
-/*
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 3px;
-}*/
 .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
@@ -303,7 +286,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default, .navbar-shrink {
   background-color: #fff;
   border-bottom: 1px solid #ECF2F6;
-
 }
 #welcome-section{
   height: 675px;
@@ -322,7 +304,7 @@ header {
     color: #fff;
 }
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 300px;
     padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
@@ -340,29 +322,8 @@ header .intro-text .intro-heading {
     line-height: 50px;
     margin-bottom: 25px;
 }
-
-@media (min-width:768px) {
-    header .intro-text {
-    padding-top: 260px;
-    padding-bottom: 200px;
-}
-header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 25px;
-}
-header .intro-text .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 75px;
-    margin-bottom: 50px;
-}
-}section {
-    padding: 70px 0;
+section {
+    padding: 70px 0 0 0;
 }
 section h2.section-heading {
     font-size: 40px;
@@ -375,16 +336,6 @@ section h3.section-subheading {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
-
-@media (min-width:768px) {
-    section {
-    padding: 100px 0;
-}
-}.service-heading {
-    margin: 15px 0;
-    text-transform: none;
-}
-
 @media (min-width:992px) {
     .timeline>li {
     min-height: 150px;
@@ -715,9 +666,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
   -webkit-transition: all .4s;
   -moz-transition: all .4s;
   transition: all .4s;
-}
-#how-it-works-subheading {
-  color: #333;
 }
 #how-it-works-img{
   height: 600px;
