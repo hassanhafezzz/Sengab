@@ -729,12 +729,12 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 .feature-img-1{
   margin-left: 150px;
-  background-image: url('../img/1.png');
+  background-image: url('../img/feature-1.png');
 }
 .feature-img-2{
   margin-left: 80px;
-  background-image: url('../img/2.png');
+  background-image: url('../img/feature-2.png');
 }
 .feature-img-3{
-  background-image: url('../img/12345.png');
+  background-image: url('../img/feature-3.png');
 }
