@@ -25,15 +25,15 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-
+// how it works section
+// keep hover effect active and remove from previous selected text
 $('.how-it-works').click(function(){
   $('.how-it-works').removeClass('c-selected');
   $('.how-it-works h4').removeClass('selected');
   $(this).addClass('c-selected');
   $('h4',this).addClass('selected');
-
 });
-// how it works section
+// Click on how it works steps
 $('#add-proj').click(function(){
   $("#how-it-works-img").hide().fadeIn(1300);
   $('#how-it-works-img').css("background-image", "url(img/add-proj.png)");

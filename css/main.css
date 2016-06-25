@@ -137,9 +137,8 @@ h1, h2, h3, h4, h5, h6 {
 .sign-btns>button{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 10px 20px;
   margin-top: 14px;
-  margin-right: 15px;
   font-size: 14px;
   -webkit-transition: all .4s;
   -moz-transition: all .4s;
@@ -185,7 +184,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #99AABC;
-  margin-right: -25px;
   -webkit-transition: all .4s;
   -moz-transition: all .4s;
   transition: all .4s;
@@ -233,6 +231,7 @@ header .intro-text .intro-heading {
 }
   .navbar-shrink .sign-btns>button {
     margin-top: 9px;
+    padding: 8px 16px;
   }
   .navbar-default {
     background-color: transparent;
@@ -355,6 +354,10 @@ section h3.section-subheading {
     width: 150px;
     height: 150px;
     margin-left: -75px;
+}
+.container {
+  padding: 0 70px;
+  }
 }
 
 .watch{
