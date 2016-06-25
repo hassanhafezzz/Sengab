@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -134,7 +134,7 @@
           </div>
           <div class="row text-left features-margin">
               <div class="col-md-offset-1 col-md-3 col-sm-12">
-                <div id="add-proj" class="how-it-works">
+                <div class="how-it-works" id="add-proj" >
                   <h4 class="how-it-works-heading">Add your project</h4>
                   <p class="how-it-works-paragraph">It's very easy and guidable to add your project</p>
                 </div>
@@ -186,15 +186,6 @@
                 </p>
               </div>
           </div>
-          <!-- <div class="row features">
-              <div class="col-md-6 col-sm-12">
-                  <div class="feature-img feature-img-2"></div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                  <h4 class="feature-heading">All you need is in one menu</h4>
-                  <p class="feature-text"> Always there to navigate , you can easily access the projects you created , your enrolled projects and see all the projects in specific category</p>
-              </div>
-          </div> -->
           <hr>
           <div class="row">
               <div class="col-md-offset-1 col-md-5 col-sm-12">
@@ -404,58 +395,11 @@
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
-
     <!-- Vimeo's Froogaloop script -->
     <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-    <!-- autoclose and autoplay the video  -->
 
-    <script>
-      var iframe = document.getElementById('vimeo-video');
-      // $f == Froogaloop
-      var player = $f(iframe);
+    <!-- Custom Theme JavaScript -->
+    <script src="js/main.js"></script>
 
-      $('.modal').on('hidden.bs.modal', function () {
-        player.api('pause');
-      })
-
-      $('.modal').on('shown.bs.modal', function () {
-        player.api('play');
-      });
-      $('.how-it-works').click(function(){
-        $('.how-it-works').removeClass('c-selected');
-        $('.how-it-works h4').removeClass('selected');
-        $(this).addClass('c-selected');
-        $('h4',this).addClass('selected');
-
-      });
-
-      $('#add-proj').click(function(){
-        $("#how-it-works-img").hide().fadeIn(1500);
-        $('#how-it-works-img').css("background-image", "url(img/add-proj.png)");
-      });
-      $('#publish-proj').click(function(){
-        $("#how-it-works-img").hide().fadeIn(1500);
-        $('#how-it-works-img').css("background-image", "url(img/publish-proj.png)");
-      });
-      $('#browse-projs').click(function(){
-        $("#how-it-works-img").hide().fadeIn(1500);
-        $('#how-it-works-img').css("background-image", "url(img/browse-projs.png)");
-      });
-      $('#show-results').click(function(){
-        $("#how-it-works-img").hide().fadeIn(1500);
-        $('#how-it-works-img').css("background-image", "url(img/show-results.png)");
-      });
-      //to apply hover effect to #add-proj div on page load
-      $(document).ready(function(){
-        $('#add-proj h4').addClass('selected');
-        $('#add-proj.how-it-works').addClass('c-selected');
-  });
-    </script>
 </body>
 </html>
