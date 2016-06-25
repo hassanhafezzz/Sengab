@@ -241,6 +241,7 @@ header .intro-text .intro-heading {
     transition: padding .3s;
     border: 0;
   }
+
   .navbar-default .navbar-brand>img {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -264,10 +265,17 @@ header .intro-text .intro-heading {
     -moz-transition: all .3s;
     transition: all .3s;
   }
+  .navbar-shrink #github-svg {
+    padding: 0 0 10px 10px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
 .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
 }
+
 /******* New from other css file ******/
 .navbar-default .navbar-nav li a, .navbar-default .nav li a:hover, .navbar-default .nav li a:focus {
   color: #344C67;
@@ -717,4 +725,37 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 }
 .feature-img-3{
   background-image: url('../img/feature-3.png');
+}
+/* GitHub Corner */
+.github-corner: hover .octo-arm {
+animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+0%, 100% {
+transform: rotate(0);
+}
+20%, 60% {
+transform: rotate(-25deg);
+}
+40%, 80% {
+transform: rotate(10deg);
+}
+}@media (max-width:500px) {
+.github-corner: hover .octo-arm {
+animation: none;
+}
+.github-corner .octo-arm {
+animation: octocat-wave 560ms ease-in-out;
+}
+}
+#github-svg {
+  fill:#344C67;
+  color:#fff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
 }
